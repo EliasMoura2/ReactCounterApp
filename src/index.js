@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-const greet = <h1>Hello World</h1>;
+import FirstApp from './FirstApp';
 
 // console.log(greet);
 const divRoot = document.querySelector('#root');
 
 // console.log(divRoot);
 
-ReactDOM.render(greet, divRoot);
+ReactDOM.render( <FirstApp />, divRoot);
