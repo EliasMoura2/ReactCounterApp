@@ -1,31 +1,22 @@
 import React from 'react';
-// import React, { Fragment } from 'react';
-// Statefull Class Component (SCC) -> Class Component(CC)
-// Stateless Functional Component (SFC) -> Functional Component(FC)
-
 const FirstApp = () => {
-// javascript solo puede retornar un objeto a la vez
-// creamos un div solo para contener h1 y p
-  // return (
-  //   <div>
-  //     <h1>Hello World</h1>
-  //     <p>My First Page</p>
-  //   </div>
-  // );
-  
-  // podemos usar un Fragment (Higher order component)
-  // componente que recibe otros componentes hijos
-  // return(
-  //   <Fragment>
-  //     <h1>Hello World</h1>
-  //     <p>My First Page</p>
-  //   </Fragment>
-  // )
+  const greet = 'Hello World'
+  const num = 123
+  const array = ['Argentina', 'Brasil']
+  const user = {
+    firstname: "Elias",
+    age: 28
+  }
 
-  // podemos usar la forma corta para usar fragments
   return (
     < >
-      <h1>Hello World</h1>
+      <h1>{greet}</h1>
+      <p>number: {num}</p>
+      <p>array: {array}</p>
+      <p>object: {JSON.stringify(user)}</p>
+      <pre>object: {JSON.stringify(user, null, 3)}</pre>
+      //coments in jsx
+      {/*<pre>object: {JSON.stringify(user, null, 3)}</pre>*/}
       <p>My First Page</p>
     </ >
   )
