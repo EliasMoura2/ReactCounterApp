@@ -8,4 +8,5 @@ const divRoot = document.querySelector('#root');
 
 // console.log(divRoot);
 
+// ReactDOM.render( <FirstApp greet='Hello world, my name is Goku'/>, divRoot);
 ReactDOM.render( <FirstApp />, divRoot);
