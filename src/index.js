@@ -1,11 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import FirstApp from './FirstApp';
+import CounterApp from './CounterApp';
 import './index.css';
 
-// console.log(greet);
 const divRoot = document.querySelector('#root');
 
-// console.log(divRoot);
-
-ReactDOM.render(<FirstApp greet='Hello World, my name is Goku' />, divRoot);
+ReactDOM.render(<CounterApp value={10}/>, divRoot);
