@@ -1,19 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 
 const CounterApp = ({value}) => {
-  // event in react
-  // https://es.reactjs.org/docs/events.html
+  // const state = useState('Goku');
+  // console.log( state );
+  // console.log( state[1]() ); // en el indice 1 esta la funcion
 
+  // const [nombre, setNombre] = useState('Goku');
+  // console.log(nombre, setNombre);
+
+  const [counter, setCounter] = useState(value) 
   // handleAdd
-    const handleAdd = e => console.log(e);
+    // const handleAdd = e => console.log(e);
+    const handleAdd = () => { setCounter( counter + 1)}
+    // otra forma de escribir la funcion
+    // const handleAdd = () => { setCounter( c => c + 1)}
+
   return(
     <>
       <h1>CounterApp</h1>
-      <p>{value}</p>
-      {/*<button onClick={ () => {console.log('+1')} }>+1</button>*/}
-      {/*<button onClick={ (event) => {console.log(event)} }>+1</button>*/}
-      {/*<button onClick={ event => handleAdd(event)}>+1</button>*/}
+      <p>{ counter }</p>
       <button onClick={ handleAdd }>+1</button>
     </>
   );
