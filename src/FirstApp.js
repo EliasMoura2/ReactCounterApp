@@ -1,9 +1,7 @@
 import React from 'react';
-// const FirstApp = (props) => {
-  // lo comun es usar destructuring en los parametros
-  // console.log(props) // {greet: 'Hello World'} -> return object
-  const FirstApp = ({ greet = 'Hello world' }) => {
-    console.log(greet) // Hello world -> return greet content
+import PropTypes from 'prop-types';
+
+  const FirstApp = ({ greet }) => {
     // tenemos que tener en cuenta que puede ser que en el componente padre
     // no se envie ninguna prop, por lo que podemospodemos tomar varias posturas
       // 1 - establecer un valor por defecto
@@ -16,5 +14,12 @@ import React from 'react';
     </ >
   )
 }
+
+
+FirstApp.propTypes = {
+  greet: PropTypes.string.isRequired
+    
+}
+
 
 export default FirstApp;
