@@ -6,7 +6,23 @@ html, body {
   padding: 70px;
 }
 
-button{
+#counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p{
+  background-color: white;
+  color: #21232A;
+  padding: 5px;
+  width: 145px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+button {
   font-size: 0.9rem;
   padding: 6px;
   margin-right: 8px;
